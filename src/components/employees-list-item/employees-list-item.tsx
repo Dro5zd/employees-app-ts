@@ -6,20 +6,20 @@ type EmployeesListItemTypeProps = {
     increase: boolean
 }
 
-const EmployeesListItem = (props:EmployeesListItemTypeProps) => {
+const EmployeesListItem = (props: EmployeesListItemTypeProps) => {
 
     let classNames = "list-group-item d-flex justify-content-between"
-    if(props.increase){
+    if (props.increase) {
         classNames += " increase"
     }
 
     return (
         <li className={classNames}>
-            <span className="list-group-item-label">{props.name }</span>
+            <span className="list-group-item-label">{props.name}</span>
             <input type="text" className="list-group-item-input" defaultValue={props.salary + '$'}/>
             <div className='d-flex justify-content-center align-items-center'>
                 <button type="button"
-                    className="btn-cookie btn-sm ">
+                        className="btn-cookie btn-sm ">
                     <i className="fas fa-cookie"></i>
                 </button>
 
