@@ -1,5 +1,6 @@
 import './employees-list-item.css';
 
+
 type EmployeesListItemTypeProps = {
     name: string
     salary: number
@@ -12,7 +13,7 @@ const EmployeesListItem = (props: EmployeesListItemTypeProps) => {
     if (props.increase) {
         classNames += " increase"
     }
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
     return (
         <li className={classNames}>
             <span className="list-group-item-label">{props.name}</span>
